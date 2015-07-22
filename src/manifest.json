@@ -1,0 +1,28 @@
+{
+  "manifest_version": 2,
+  "name": "Daily Fantasy Powertools for Yahoo!",
+  "version": "0.0.1",
+  "description": "Poweruser tools for Yahoo! DFS",
+  "content_scripts": [
+    {
+      "matches": [
+        "http://sports.yahoo.com/dailyfantasy/contest/",
+        "https://sports.yahoo.com/dailyfantasy/contest/*"
+      ],
+      "js": [
+        "jquery-2.1.1.min.js",
+        "underscore-min.js",
+        "yahoo-dfs-powertools.js"
+      ],
+      "css": [
+        "yahoo-dfs-powertools.css"
+      ]
+    }
+  ],
+  "web_accessible_resources": [
+    "underscore-min.map"
+  ],
+  "icons": {
+    "128": "logo-128.png"
+  }
+}
